@@ -101,7 +101,7 @@ a{
 
 
 #historybody {
-    background-image: url(assets/history.jpg);
+    background-image: url(assets/history.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -168,6 +168,10 @@ a{
     cursor: pointer;
 }
 @media (max-width: 992px) {
+    .navhead
+    {
+    width: 88%;
+    }
     .hideonmobile
     {
         display: none;
@@ -176,7 +180,7 @@ a{
     {
         display: block;
         margin-top: 50px;
-        margin-right: -60px;
+        margin-right: -80px;
     }
     .navelements
     {

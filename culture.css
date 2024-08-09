@@ -357,6 +357,10 @@ body {
     }
 }
 @media (max-width: 992px) {
+    .navhead
+    {
+    width: 88%;
+    }
     .hideonmobile
     {
         display: none;
@@ -365,7 +369,7 @@ body {
     {
         display: block;
         margin-top: 50px;
-        margin-right: -60px;
+        margin-right: -80px;
     }
     .navelements
     {
