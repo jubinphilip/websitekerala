@@ -351,6 +351,7 @@ a{
     width: 100px;
     height: 100px;
 }
+
 .helpline
 {
     display: flex;
@@ -391,6 +392,7 @@ a{
         width: fit-content;
         height: fit-content;
         text-align: center;
+
     }
     
     .popup {
@@ -399,6 +401,7 @@ a{
         left: 50%;
         transform:translate(-50%,-50%);
         display: none;
+        margin-top: 50px;
     }
     .imgbox img{
         position: relative;
@@ -407,5 +410,6 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -40px;
     }
 }
