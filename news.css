@@ -269,7 +269,7 @@ a{
         display: flex;
         flex-direction: column;
         width: fit-content;
-        height: fit-content;
+        height: 80vh;
         text-align: center;
 
     }
