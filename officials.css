@@ -400,12 +400,12 @@ a{
         left: 50%;
         transform:translate(-50%,-50%);
         display: none;
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .content h3{
-        margin-top: -100px;
+        margin-top: -120px;
     }
     .imgbox img{
-        margin-top: -120px;
+        margin-top: -80px;
     }
 }
