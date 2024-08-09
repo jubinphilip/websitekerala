@@ -1,0 +1,81 @@
+footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    color: white;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    height: fit-content;
+}
+
+/* Container to center and limit width */
+.container {
+    max-width: 1170px;
+    margin: 0 auto; /* Center container */
+    padding: 0 15px; /* Add some padding on small screens */
+}
+
+/* Flexbox for rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Offset padding in columns */
+}
+
+/* Column styling */
+.col {
+    flex: 1; /* Flex-grow to occupy space */
+    min-width: 200px; /* Minimum width for responsiveness */
+    padding: 0 15px; /* Padding inside columns */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.col h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 10px;
+    transition: color .3s ease, padding-left .3s ease;
+}
+
+.col ul li a:hover {
+    color: #fff;
+    padding-left: 6px;
+}
+
+.col .social a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 10px 10px 0; /* Correct margin values */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: background .5s ease;
+}
+
+.col .social a:hover {
+    background: rgba(0, 0, 0, 0.2); /* Darker background on hover */
+}
+
+/* Mobile responsiveness */
+@media(max-width: 767px) {
+    .col {
+        flex: 1 1 100%; /* Take full width on small screens */
+        margin-bottom: 30px;
+    }
+}

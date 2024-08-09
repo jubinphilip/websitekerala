@@ -1,0 +1,378 @@
+
+
+#preloader
+{
+    background: white url(assets/load.gif) no-repeat center;
+    background-size: 40%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navelements
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: whitesmoke;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.navhead
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center; 
+    justify-content: space-between; 
+}
+#text
+{
+    text-align: center;
+}
+#navitems
+{
+    margin-top: -50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: .5em;
+}
+a:hover
+{
+    border-bottom: 2px solid green;
+    color: green;
+    font-weight: bold;
+}
+#navlogo>img
+{
+    width: 5em;
+    height: 5em;
+    margin: 2em;
+}
+#navh1{
+    font-weight: bold;
+    font-size: 5em;
+    background: linear-gradient(90deg, #7fb0f4, #4dd074); 
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
+.content1
+{
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    margin-right:2em;
+    color: rgb(19, 186, 94);
+}
+#sidebar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    gap: 5px;
+    background-color: rgb(248, 244, 244);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#sidebar li{
+    width: 100%;
+    margin: 20px;
+
+}
+#sidebar a{
+    width: 100%;
+}
+
+/* Global styles */
+body {
+
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Festivals section */
+.festivals {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+#festhead {
+    font-size: 2.5em;
+    color: #1a936f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.festivals > p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.fest {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.festimage {
+    flex: 0 0 200px;
+}
+
+.festimage > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.festcontent {
+    flex: 1;
+    padding: 20px;
+}
+
+.head > h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #1a936f, #114b5f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Arts section */
+.artssection {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#arthead {
+    font-size: 2.5em;
+    color: #1a936f;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#arts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.art {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.art:hover {
+    transform: translateY(-5px);
+}
+
+.artimg {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.artimg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+}
+
+.arttxt {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.artname {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #1a936f;
+}
+
+.artdes {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .fest {
+        flex-direction: column;
+    }
+    
+    .festimage {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    #arts {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+/* Food and Fashion Section */
+.liestyle {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.lifestylehead {
+    font-size: 2.5em;
+    color: #1a936f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.liestyle > p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for food and fashion details */
+.food-fashion-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Common styles for food and fashion sections */
+.food, .fashion {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.food:hover, .fashion:hover {
+    transform: translateY(-5px);
+}
+
+/* Image container */
+.foodimg, .fashionimg {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.foodimg img, .fashionimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.menubtn
+{
+    display: none;
+}
+.food:hover .foodimg img, .fashion:hover .fashionimg img {
+    transform: scale(1.05);
+}
+
+/* Content styles */
+.foodcontent, .fashioncontent {
+    padding: 20px;
+}
+
+.foodname, .fashionname {
+    font-size: 1.5em;
+    color: #1a936f;
+    margin-bottom: 10px;
+}
+
+.foodtext, .fashiontext {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .food-fashion-container {
+        flex-direction: column;
+    }
+
+    .food, .fashion {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 992px) {
+    .hideonmobile
+    {
+        display: none;
+    }
+    .menubtn
+    {
+        display: block;
+        margin-top: 50px;
+        margin-right: -60px;
+    }
+    .navelements
+    {
+        position: static;
+    }
+    #navh1
+    {
+        display: none;
+    }
+}

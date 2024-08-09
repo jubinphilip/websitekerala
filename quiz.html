@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+    <title>Quiz Time</title>
+</head>
+<body>
+    <div>
+        <div>
+            <a href="history.html"><img class="backbtn" title="Back to hisory page" src="assets/back.png" alt=""></a>
+            <h1>Its Quiz time...</h1>
+            <p>Attend the quiz regarding the history of Kerala and learn...</p>
+        </div>
+        <div class="content">
+            <p class="question">
+                What is the earliest known reference to Kerala?
+            </p>
+            <div class="answer">
+                <label >Malabar</label><input type="radio" name="ans1" class="ans1" value="Malabar">
+                <label>Keralaputra</label><input type="radio" name="ans1" class="ans1" value="Keralaputra">
+                <label>Tamilakam</label><input type="radio" name="ans1" class="ans1" value="Tamilakam">
+                <label>Travancore</label><input type="radio" name="ans1" class="ans1" value="Travancore">
+            </div>
+        </div>
+
+        <div class="popup">  
+            <section class="popup-content">
+             <div class="closebtn"></div>
+                 <div class="contentbox">
+                     <h2 id="resulthead"></h2>
+                     <p id="resulttxt"></p>
+                 </div>
+            </section> 
+         </div>
+
+        <div class="content">
+            <p class="question">
+                The Ashoka Chakra, a symbol associated with Emperor Ashoka, represents what principles?
+            </p>
+            <div class="answer">
+                <label >Courage and strength</label><input type="radio" name="ans2" class="ans2" value="Courage and strength">
+                <label >Righteousness and moral governance</label><input type="radio" name="ans2" class="ans2" value="Righteousness and moral governance">
+                <label >Wealth and prosperity</label><input type="radio" name="ans2" class="ans2" value="Wealth and prosperity">
+                <label >War and conquest</label><input type="radio" name="ans2" class="ans2" value="War and conquest">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Which ancient empire first mentioned Kerala in its records?
+            </p>
+            <div class="answer">
+                <label>Roman Empire</label><input type="radio" name="ans3" class="ans3" value="Roman Empire">
+                <label>Chola Empire</label><input type="radio" name="ans3" class="ans3" value="Chola Empire">
+                <label>Mauryan Empire</label><input type="radio" name="ans3" class="ans3" value="Mauryan Empire">
+                <label>Pandya Empire</label><input type="radio" name="ans3" class="ans3" value="Pandya Empire">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Which period is known for the arrival of Jewish immigrants and the visit of St. Thomas the Apostle to Kerala?
+            </p>
+            <div class="answer">
+                <label>3rd century BCE</label><input type="radio" name="ans4" class="ans4" value="3rd century BCE">
+                <label>1st century CE</label><input type="radio" name="ans4" class="ans4" value="1st century CE">
+                <label>6th century CE</label><input type="radio" name="ans4" class="ans4" value="6th century CE">
+                <label>10th century CE</label><input type="radio" name="ans4" class="ans4" value="10th century CE">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Which dynasty is credited with fostering the emergence of Malayalam as a distinct language?
+            </p>
+            <div class="answer">
+                <label>Chola dynasty</label><input type="radio" name="ans5" class="ans5" value="Chola dynasty">
+                <label>Pandya dynasty</label><input type="radio" name="ans5" class="ans5" value="Pandya dynasty">
+                <label>Kulashekhara dynasty</label><input type="radio" name="ans5" class="ans5" value="Kulashekhara dynasty">
+                <label>Chera dynasty</label><input type="radio" name="ans5" class="ans5" value="Chera dynasty
+                ">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Who was the ruler of Venad that successfully repelled Dutch expansion in Kerala?
+            </p>
+            <div class="answer">
+                <label>Vasco da Gama</label><input type="radio" name="ans6" class="ans6" value="Vasco da Gama">
+                <label>Marthanda Varma</label><input type="radio" name="ans6" class="ans6" value="Marthanda Varma">
+                <label> Ravi Varma Kulashekhara</label><input type="radio" name="ans6" class="ans6" value=" Ravi Varma Kulashekhara">
+                <label>Zamorin of Calicut</label><input type="radio" name="ans6" class="ans6" value="Zamorin of Calicut">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                In which century did Vasco da Gama land near Calicut, marking the start of European intervention in Kerala?
+            </p>
+            <div class="answer">
+                <label>14th century</label><input type="radio" name="ans7" class="ans7" value="14th century">
+                <label>15th century</label><input type="radio" name="ans7" class="ans7" value="15th century">
+                <label>16th century</label><input type="radio" name="ans7" class="ans7" value="16th century">
+                <label>17th century</label><input type="radio" name="ans7" class="ans7" value="17th century">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Which European power replaced the Portuguese in Kerala during the 17th century?
+            </p>
+            <div class="answer">
+                <label>British</label><input type="radio" name="ans8" class="ans8" value="British">
+                <label>Dutch</label><input type="radio" name="ans8" class="ans8" value="Dutch">
+                <label>French</label><input type="radio" name="ans8" class="ans8" value="French">
+                <label>Spanish</label><input type="radio" name="ans8" class="ans8" value=" Spanish">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                The present state of Kerala was formed in which year?
+            </p>
+            <div class="answer">
+                <label>1947</label><input type="radio" name="ans9" class="ans9" value="1947">
+                <label>1950</label><input type="radio" name="ans9" class="ans9" value="1950">
+                <label>1956</label><input type="radio" name="ans9" class="ans9" value="1956">
+                <label>1961</label><input type="radio" name="ans9" class="ans9" value="1961">
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="question">
+                Which two states were merged to form the Travancore-Cochin state after India's independence?
+            </p>
+            <div class="answer">
+                <label>Cochin and Malabar</label><input type="radio" name="ans10" class="ans10" value="Cochin and Malabar">
+                <label>Travancore and Malabar</label><input type="radio" name="ans10" class="ans10" value="Travancore and Malabar">
+                <label>Travancore and Cochin</label><input type="radio" name="ans10" class="ans10" value="Travancore and Cochin">
+                <label> Cochin and Kasargod</label><input type="radio" name="ans10" class="ans10" value=" Cochin and Kasargod">
+            </div>
+        </div>
+    </div>
+    <button onclick="evalQuiz()">Submit</button>
+</body>
+<script src="quiz.js"></script>
+</html>
