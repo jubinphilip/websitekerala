@@ -1,5 +1,5 @@
 
-  const API_KEY = '300a07e6438840378e518526f71d8fef';
+  /* const API_KEY = '300a07e6438840378e518526f71d8fef';
   const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
 
   const newsContainer = document.getElementById('news-container');
@@ -27,12 +27,14 @@
           newsContainer.appendChild(newsItem);
       });
   }
-  
+   
   // Fetch news initially
   fetchNews();
   
   // Refresh news every 5 minutes (300,000 milliseconds)
-  setInterval(fetchNews, 300000);
+  setInterval(fetchNews, 300000);*/
+
+  
   
 const popup=document.querySelector('.popup')
 const close=document.querySelector('.closebtn')

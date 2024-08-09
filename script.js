@@ -1,4 +1,6 @@
 // script.js
+
+
 function showBar()
 {
     const sidebar=document.querySelector('#sidebar')

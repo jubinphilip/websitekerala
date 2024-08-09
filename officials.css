@@ -6,13 +6,6 @@
     position: fixed;
     z-index: 100;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -108,11 +101,14 @@ a{
 #sidebar a{
     width: 100%;
 }
+.menubtn
+{
+    display: none;
+}
 
-
-.news-container {
+/* .news-container {
     padding: 10px;
-    max-width: 1000px; /* Adjust as needed */
+    max-width: 1000px; 
     margin: 0 auto;
 }
 
@@ -123,10 +119,7 @@ a{
     border-radius: 5px;
     background-color: #f9f9f9;
 }
-.menubtn
-{
-    display: none;
-}
+
 .news-item h2 {
     margin: 0 0 10px;
     font-size: 1em;
@@ -146,7 +139,133 @@ a{
 
 .news-item a:hover {
     text-decoration: underline;
+} */
+
+.officials {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+/* Header styles */
+.ocontent {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ohead {
+    color: #1a5f7a;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.otext {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Chief Minister styles */
+.chief {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chiefimg img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.chieftxt h3 {
+    color: #1a5f7a;
+    margin-bottom: 5px;
+}
+
+.chieftxt p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Card styles */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardimg {
+    height: 200px;
+    overflow: hidden;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardcontent {
+    padding: 15px;
+    text-align: center;
+}
+
+.cardcontent p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1a5f7a;
+}
+
+.cardcontent p:last-child {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .chief {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .chiefimg img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
 /*popup*/
 .popup {
     position: fixed;
@@ -154,6 +273,7 @@ a{
     left: 80%;
     transform:translate(-50%,-50%);
     display: none;
+    z-index: 1000;
 }
 .popup-content{
     position: relative;
@@ -269,10 +389,10 @@ a{
         display: flex;
         flex-direction: column;
         width: fit-content;
-        height: 80vh;
+        height: fit-content;
         text-align: center;
-
     }
+    
     .popup {
         position: fixed;
         top: 50%;
