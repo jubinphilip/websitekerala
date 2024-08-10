@@ -131,12 +131,7 @@ a{
         position: static;
         height: fit-content;
     }
-    #navlogo>img
-{
-    width: 3em;
-    height: 3em;
-    margin: 2em;
-}
+
     #navh1
     {
         display: none;
