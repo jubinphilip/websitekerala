@@ -1,9 +1,8 @@
-
 *{
     margin: 0;
     padding: 0;
 }
-/*Preloader design*/
+/*preloader*/
 #preloader
 {
     background: white url(assets/load.webp) no-repeat center;
@@ -14,7 +13,7 @@
     z-index: 100;
 }
 
-/*Navbar*/
+/*Slider*/
 .navelements
 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -105,25 +104,104 @@ a{
 #sidebar a{
     width: 100%;
 }
-.menubtn
-{
-    display: none;
+
+
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
-/*Mobile Responsive*/
+
+/* Slides container */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+/* Individual slide styling */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Needed for overlay positioning */
+}
+
+/* Image styling */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for better appearance */
+    background: rgba(24, 23, 23, 0.5);
+    width: 80%; /* Adjust as needed */
+}
+
+/* Heading and paragraph styling inside the overlay */
+.overlay h2 {
+    margin: 0;
+    font-size: 2em;
+}
+#main
+{
+    font-size: 100px;
+}
+.overlay p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Navigation arrows styling */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 3px;
+}
+
+.prev {
+    left: 10px; /* Adjust spacing from the left */
+}
+
+.next {
+    right: 10px; /* Adjust spacing from the right */
+}
+
+/* Ensure that navigation arrows are visible above the overlay */
+.prev, .next {
+    z-index: 2;
+}
+
 @media (max-width: 992px) {
     .navhead
     {
     width: 88%;
     }
-    .image {
-        width: calc(50% - 20px);
-    }
+  
     .hideonmobile
     {
         display: none;
-    }
-    #main{
-        font-size: 50px;
     }
     .menubtn
     {

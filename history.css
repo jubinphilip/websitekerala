@@ -12,6 +12,7 @@
     justify-content: center;
     padding: 50px 0;
 }
+
 .history {
     width: 80%;
     display: flex;
@@ -68,4 +69,12 @@
 .quiztime:hover{
     background-color: rgb(177, 7, 7);
     cursor: pointer;
+}
+@media (max-width: 992px) {
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
 }
