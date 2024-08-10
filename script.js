@@ -1,5 +1,5 @@
 
-
+//This Script Contains code for the preloader and navigation bar in every Page
 //Preloader Animation
 
 var loader = document.getElementById("preloader");
