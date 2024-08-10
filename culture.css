@@ -195,10 +195,6 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-.menubtn
-{
-    display: none;
-}
 .food:hover .foodimg img, .fashion:hover .fashionimg img {
     transform: scale(1.05);
 }
