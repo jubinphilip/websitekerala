@@ -68,6 +68,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.container
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
 
 .chiefimg img {
     width: 200px;
@@ -137,6 +143,10 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .container
+    {
+        width: fit-content;
+    }
     .chief {
         flex-direction: column;
         text-align: center;

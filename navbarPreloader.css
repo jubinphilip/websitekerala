@@ -79,6 +79,10 @@ a{
     margin-right:2em;
     color: rgb(19, 186, 94);
 }
+.menubtn
+{
+    display: none;
+}
 #sidebar
 {
     position: fixed;

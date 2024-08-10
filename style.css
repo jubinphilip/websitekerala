@@ -202,10 +202,7 @@
 h1{
     color: rgb(8, 94, 8);
 }
-.menubtn
-{
-    display: none;
-}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .image {
