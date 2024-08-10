@@ -1,4 +1,5 @@
 
+  
   /* const API_KEY = '300a07e6438840378e518526f71d8fef';
   const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
 
@@ -36,14 +37,5 @@
 
   
   
-const popup=document.querySelector('.popup')
-const close=document.querySelector('.closebtn')
-window.onload=function(){
-    setTimeout(function(){
-        popup.style.display='block'
-    },1000)
-}
-close.addEventListener('click',()=>
-{
-    popup.style.display='none';
-})
+//Wayanad Popup Box
+

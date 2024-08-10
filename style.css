@@ -1,109 +1,4 @@
-#preloader
-{
-    background: white url(assets/load.webp) no-repeat center;
-    background-size: 40%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-.navelements
-{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height:fit-content;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: whitesmoke;
-    width: 100%;
-}
-ul{
-    list-style-type: none;
-}
-.navhead
-{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center; 
-    justify-content: space-between; 
-}
-#text
-{
-    text-align: center;
-}
-#navitems
-{
-    margin-top: -50px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-bottom: .5em;
-}
-a:hover
-{
-    border-bottom: 2px solid green;
-    color: green;
-    font-weight: bold;
-}
-#navlogo>img
-{
-    width: 5em;
-    height: 5em;
-    margin: 2em;
-}
-#navh1{
-    font-weight: bold;
-    font-size: 5em;
-    background: linear-gradient(90deg, #7fb0f4, #4dd074); 
-    -webkit-background-clip: text;
-    background-clip: text; 
-    color: transparent;
-}
-.content1
-{
-    flex-grow: 1; 
-    display: flex;
-    justify-content: center; 
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    margin-right:2em;
-    color: rgb(19, 186, 94);
-}
-#sidebar
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    gap: 5px;
-    background-color: rgb(248, 244, 244);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-#sidebar li{
-    width: 100%;
-    margin: 20px;
-
-}
-#sidebar a{
-    width: 100%;
-}
-
-
-/* Slider container */
+/* Slider Design Index Page */
 .slider {
     position: relative;
     width: 100%;
@@ -111,28 +6,27 @@ a{
     overflow: hidden;
 }
 
-/* Slides container */
+
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
 }
 
-/* Individual slide styling */
 .slide {
     min-width: 100%;
     box-sizing: border-box;
-    position: relative; /* Needed for overlay positioning */
+    position: relative; 
 }
 
-/* Image styling */
+
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Overlay styling */
+
 .overlay {
     position: absolute;
     top: 50%;
@@ -141,12 +35,12 @@ a{
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for better appearance */
+    border-radius: 10px; 
     background: rgba(24, 23, 23, 0.5);
-    width: 80%; /* Adjust as needed */
+    width: 80%; 
 }
 
-/* Heading and paragraph styling inside the overlay */
+
 .overlay h2 {
     margin: 0;
     font-size: 2em;
@@ -160,7 +54,7 @@ a{
     font-size: 1.2em;
 }
 
-/* Navigation arrows styling */
+
 .prev, .next {
     position: absolute;
     top: 50%;
@@ -178,18 +72,19 @@ a{
 }
 
 .prev {
-    left: 10px; /* Adjust spacing from the left */
+    left: 10px; 
 }
 
 .next {
-    right: 10px; /* Adjust spacing from the right */
+    right: 10px; 
 }
 
-/* Ensure that navigation arrows are visible above the overlay */
+
 .prev, .next {
     z-index: 2;
 }
 
+/*About Section*/
 #about {
     display: flex;
     justify-content: center;
@@ -220,6 +115,8 @@ a{
     font-size: 1.2em; 
     line-height: 1.6; 
 }
+
+/*Places To Visit*/
 .wrapper
 {
     width: 100%;
@@ -241,12 +138,12 @@ a{
 }
 .image {
     position: relative;
-    width: calc(30% - 20px); /* Adjust based on desired number of items per row */
+    width: calc(30% - 20px); 
 }
 
 .image img {
     width: 100%;
-    height: 250px; /* Maintain aspect ratio */
+    height: 250px; 
     display: block;
 }
 #places
@@ -278,13 +175,13 @@ a{
 }
 
 .content h1 {
-    font-size: 24px; /* Adjust font size */
+    font-size: 24px;
     color: yellow;
     margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px;
     color: #fff;
 }
 
@@ -299,54 +196,20 @@ a{
 h1{
     color: rgb(8, 94, 8);
 }
-.menubtn
-{
-    display: none;
-}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .image {
         width: calc(33.33% - 20px);
     }
 }
-
-@media (max-width: 992px) {
-    .navhead
-    {
-    width: 88%;
-    }
-    .image {
-        width: calc(50% - 20px);
-    }
-    .hideonmobile
-    {
-        display: none;
-    }
-    #main{
-        font-size: 50px;
-    }
-    .menubtn
-    {
-        display: block;
-        margin-top: 50px;
-        margin-right: -80px;
-    }
-    .navelements
-    {
-        position: static;
-    }
-    #navh1
-    {
-        display: none;
-    }
-}
-
 @media (max-width: 768px) {
     .image {
         width: 100%;
     }
 
 }
+/*Explore Button*/
 button
 {
     border: none;

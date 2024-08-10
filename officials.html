@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Website</title>
   <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+  <link rel="stylesheet" href="navbarPreloader.css">
   <link rel="stylesheet" href="officials.css">
   <style>
 
@@ -332,16 +333,20 @@
     <div class="footer">
 
     </div>
-  <script src="officials.js">
-  </script>
-  <script>
-    var loader = document.getElementById("preloader");
-window.addEventListener("load", function() {
- setTimeout(function() {
-     loader.style.display = "none";
- },0); 
-});
- </script>
+    <script>
+        //Wayanad Popup Box
+        const popup=document.querySelector('.popup')
+        const close=document.querySelector('.closebtn')
+        window.onload=function(){
+            setTimeout(function(){
+            popup.style.display='block'
+        },3000)
+        }
+        close.addEventListener('click',()=>
+        {
+             popup.style.display='none';
+        })
+    </script>
   <script src="script.js"></script>
   <script src="footer.js"></script>
 </body>

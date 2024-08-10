@@ -1,112 +1,5 @@
 
 
-#preloader
-{
-    background: white url(assets/load.webp) no-repeat center;
-    background-size: 40%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-.navelements
-{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: whitesmoke;
-    width: 100%;
-}
-ul{
-    list-style-type: none;
-}
-.navhead
-{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: center; 
-    justify-content: space-between; 
-}
-#text
-{
-    text-align: center;
-}
-#navitems
-{
-    margin-top: -50px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding-bottom: .5em;
-}
-a:hover
-{
-    border-bottom: 2px solid green;
-    color: green;
-    font-weight: bold;
-}
-#navlogo>img
-{
-    width: 5em;
-    height: 5em;
-    margin: 2em;
-}
-#navh1{
-    font-weight: bold;
-    font-size: 5em;
-    background: linear-gradient(90deg, #7fb0f4, #4dd074); 
-    -webkit-background-clip: text;
-    background-clip: text; 
-    color: transparent;
-}
-.content1
-{
-    flex-grow: 1; 
-    display: flex;
-    justify-content: center; 
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    margin-right:2em;
-    color: rgb(19, 186, 94);
-}
-#sidebar
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    gap: 5px;
-    background-color: rgb(248, 244, 244);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-#sidebar li{
-    width: 100%;
-    margin: 20px;
-
-}
-#sidebar a{
-    width: 100%;
-}
-
-/* Global styles */
 body {
 
     line-height: 1.6;
@@ -248,21 +141,7 @@ body {
     color: #555;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .fest {
-        flex-direction: column;
-    }
-    
-    .festimage {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-    
-    #arts {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
+
 /* Food and Fashion Section */
 .liestyle {
     max-width: 1200px;
@@ -284,8 +163,6 @@ body {
     text-align: center;
     margin-bottom: 30px;
 }
-
-/* Container for food and fashion details */
 .food-fashion-container {
     display: flex;
     justify-content: space-between;
@@ -293,7 +170,6 @@ body {
     gap: 40px;
 }
 
-/* Common styles for food and fashion sections */
 .food, .fashion {
     flex: 1;
     background-color: #f9f9f9;
@@ -307,7 +183,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Image container */
 .foodimg, .fashionimg {
     width: 100%;
     height: 250px;
@@ -328,7 +203,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Content styles */
 .foodcontent, .fashioncontent {
     padding: 20px;
 }
@@ -347,6 +221,21 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .fest {
+        flex-direction: column;
+    }
+    
+    .festimage {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    #arts {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
     .food-fashion-container {
         flex-direction: column;
     }
@@ -354,29 +243,5 @@ body {
     .food, .fashion {
         width: 100%;
         margin-bottom: 30px;
-    }
-}
-@media (max-width: 992px) {
-    .navhead
-    {
-    width: 88%;
-    }
-    .hideonmobile
-    {
-        display: none;
-    }
-    .menubtn
-    {
-        display: block;
-        margin-top: 50px;
-        margin-right: -80px;
-    }
-    .navelements
-    {
-        position: static;
-    }
-    #navh1
-    {
-        display: none;
     }
 }

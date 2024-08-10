@@ -10,8 +10,8 @@ function evalQuiz()
         {
             popup.style.display='none';
         })
-    const resulthead=document.getElementById('resulthead')
-    const resulttxt=document.getElementById('resulttxt')
+    const resultHead=document.getElementById('resulthead')
+    const resultTxt=document.getElementById('resulttxt')
     try
     {
    var ans1=document.querySelector('input[name="ans1"]:checked').value
@@ -55,12 +55,12 @@ function evalQuiz()
     if(count>7)
     {
         
-        resulthead.innerHTML="Congratulations";
-        resulttxt.innerHTML=`You have Scored ${count} marks`
+        resultHead.innerHTML="Congratulations";
+        resultTxt.innerHTML=`You have Scored ${count} marks`
     }else
     {
-        resulthead.innerHTML="Try Again you have to improve";
-        resulttxt.innerHTML=`You have Scored ${count} marks`
+        resultHead.innerHTML="Try Again you have to improve";
+        resultTxt.innerHTML=`You have Scored ${count} marks`
     }
 }
 

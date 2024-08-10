@@ -1,6 +1,16 @@
-// script.js
 
 
+//Preloader Animation
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+ setTimeout(function() {
+     loader.style.display = "none";
+ },1000); 
+});
+
+
+//Navigation Bar
 function showBar()
 {
     const sidebar=document.querySelector('#sidebar')
@@ -14,12 +24,12 @@ function hidebar()
 let slideIndex = 0;
 showSlides();
 
-// Next/previous controls
+//Slides Functions index page
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Show slides
+
 function showSlides(n) {
     const slides = document.getElementsByClassName("slide");
     const totalSlides = slides.length;
@@ -38,7 +48,8 @@ function showSlides(n) {
     slides[slideIndex].style.display = "block";
 }
 
-// Auto slide
 setInterval(() => {
     plusSlides(1);
-}, 3000); // Change slide every 5 seconds
+}, 3000); 
+
+
