@@ -229,9 +229,6 @@ body {
     #arts {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-}
-
-@media (max-width: 768px) {
     .arttxt,.festcontent,.food-fashion-container{
         display: flex;
         flex-direction: column;
