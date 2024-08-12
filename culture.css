@@ -232,8 +232,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    .food-fashion-container {
+    .arttxt,.festcontent,.food-fashion-container{
+        display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .food, .fashion {
